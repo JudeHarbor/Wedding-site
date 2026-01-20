@@ -136,7 +136,7 @@ body {
 
     .sneak {
         height: 80vh;
-        background-image: url('./images/andres-molina-wIfDI58tCuU-unsplash.webp');
+        background-image: url('../images/andres-molina-wIfDI58tCuU-unsplash.webp');
         background-position: center;
 
         .overlay {
@@ -235,7 +235,7 @@ body {
 
     .countdown {
         height: 60vh;
-        background-image: url("./images/tasha-marie-kCdjXEsCm2I-unsplash.webp");
+        background-image: url("../images/tasha-marie-kCdjXEsCm2I-unsplash.webp");
         background-size: cover;
         background-position: center;
         margin-block: 2rem;
