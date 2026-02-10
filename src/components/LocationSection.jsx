@@ -28,7 +28,7 @@ const LocationSection = () => {
 
         {/* Central Image */}
         <div className="img-wrap">
-          <img src={locationImg} alt="Wedding Venue" />
+          <img src={locationImg} alt="Wedding Venue" loading="lazy" />
         </div>
 
         {/* Reception Link - Right Side */}

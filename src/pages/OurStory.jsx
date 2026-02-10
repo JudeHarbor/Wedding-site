@@ -14,7 +14,7 @@ const OurStory = () => {
         </div>
         <div className="flex">
           <div className="main-image">
-            <img src={story1} alt="Story 1" />
+            <img src={story1} alt="Story 1" loading="lazy" />
           </div>
           <div className="side">
             <p>
@@ -24,15 +24,15 @@ const OurStory = () => {
               we understood where it would lead.
             </p>
             <div className="images">
-              <img src={story2} alt="Story 2" />
-              <img src={story3} alt="Story 3" />
+              <img src={story2} alt="Story 2" loading="lazy" />
+              <img src={story3} alt="Story 3" loading="lazy" />
             </div>
           </div>
         </div>
         <h1 className="bg-name">SONIA & KIAH</h1>
       </section>
 
-      <section className="story-second">
+      <section className="story-second reveal">
         <div className="flex">
           <p>
             We met without truly meeting, connected before we ever realized it.
@@ -40,11 +40,11 @@ const OurStory = () => {
             celebrated their love, unaware that one day it would be our own turn
             to stand in that moment.
           </p>
-          <img src={story4} alt="Story 4" />
+          <img src={story4} alt="Story 4" loading="lazy" />
         </div>
       </section>
 
-      <section className="story-third">
+      <section className="story-third reveal">
         <div className="flex">
           <div className="text-content">
             <p>
@@ -58,7 +58,7 @@ const OurStory = () => {
               the future together. This is our story—where hello became forever.
             </p>
           </div>
-          <img src={story5} alt="Story 5" />
+          <img src={story5} alt="Story 5" loading="lazy" />
         </div>
       </section>
     </div>

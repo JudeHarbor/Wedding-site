@@ -14,6 +14,12 @@ const SneakPeek = () => {
             <h1>11:00 AM</h1>
             <p>CEREMONY</p>
           </div>
+          <img
+            src={bgImg}
+            alt="Sonia & Hezekiah Moment"
+            className="sneak-peek-img"
+            loading="lazy"
+          />
           <div className="col">
             <h1>1:00 PM</h1>
             <p>RECEPTION</p>

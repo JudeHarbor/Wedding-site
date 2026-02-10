@@ -14,9 +14,24 @@ const Hero = () => {
         <h1>2026</h1>
       </div>
       <div className="images">
-        <img src={sideImg1} className="side-image" alt="Wedding Side 1" />
-        <img src={mainImg} className="main-image" alt="Wedding Main" />
-        <img src={sideImg2} className="side-image" alt="Wedding Side 2" />
+        <img
+          src={sideImg1}
+          className="side-image"
+          alt="Wedding Side 1"
+          loading="lazy"
+        />
+        <img
+          src={mainImg}
+          className="main-image"
+          alt="Wedding Main"
+          loading="lazy"
+        />
+        <img
+          src={sideImg2}
+          className="side-image"
+          alt="Wedding Side 2"
+          loading="lazy"
+        />
       </div>
       <div className="motto">
         <h1>JOIN US AS WE EMBARK</h1>
@@ -25,8 +40,18 @@ const Hero = () => {
         <h1>HAPPINESS.</h1>
       </div>
       <div className="side-images-mobile-wrap">
-        <img src={sideImg1} className="side-image" alt="Wedding Side 1" />
-        <img src={sideImg2} className="side-image" alt="Wedding Side 2" />
+        <img
+          src={sideImg1}
+          className="side-image"
+          alt="Wedding Side 1"
+          loading="lazy"
+        />
+        <img
+          src={sideImg2}
+          className="side-image"
+          alt="Wedding Side 2"
+          loading="lazy"
+        />
       </div>
     </section>
   );
