@@ -1,0 +1,87 @@
+.sneak {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.sneak .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sneak .overlay .top {
+  font-size: 85.12px;
+  font-weight: lighter;
+  font-family: "silk reg", serif;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+
+.sneak .overlay p {
+  font-size: 20.608px;
+  font-family: "Helvetica", sans-serif;
+}
+
+.sneak .overlay .flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 12rem;
+}
+
+.sneak .overlay .flex h1 {
+  font-size: 50.56px;
+  font-family: "silk reg", serif;
+  margin: 0px 0px 32px;
+  font-weight: lighter;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .sneak {
+    height: auto;
+    padding: 5rem 1rem;
+  }
+
+  .sneak .overlay .top {
+    font-size: 2.8rem;
+  }
+  .sneak .overlay .flex {
+    gap: 3rem;
+  }
+  .sneak .overlay .flex h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sneak .overlay .top {
+    font-size: 2.2rem;
+  }
+  .sneak .overlay .flex {
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sneak {
+    padding: 0;
+  }
+
+  .sneak .overlay {
+    padding: 5rem 1rem;
+  }
+
+  .sneak .overlay .top {
+    font-size: 1.8rem;
+  }
+}

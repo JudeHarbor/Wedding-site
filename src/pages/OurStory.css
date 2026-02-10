@@ -1,0 +1,229 @@
+/* Hero Section */
+.story-hero {
+  padding-top: 23rem;
+  padding-inline: 2rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.story-hero .head-text h1 {
+  font-size: 85.12px;
+  text-decoration: none;
+  color: black;
+  font-family: "silk reg", serif;
+  font-weight: lighter;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15rem; /* Adjusted for React layout */
+}
+
+.story-hero .flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-inline: 2rem;
+  gap: 6rem;
+}
+
+.story-hero .main-image img {
+  width: 100%;
+  max-width: 870px;
+  height: 1115px;
+  object-fit: cover;
+}
+
+.story-hero .side p {
+  font-size: 16.304px;
+  font-weight: lighter;
+  line-height: 2;
+  font-family: "Helvetica", sans-serif;
+  width: 80%;
+  padding-bottom: 10rem;
+}
+
+.story-hero .side .images {
+  display: flex;
+  gap: 1rem;
+}
+
+.story-hero .side .images img {
+  width: 356.17px;
+  height: 478.69px;
+  object-fit: cover;
+}
+
+.story-hero .bg-name {
+  font-size: 199.2px;
+  font-family: "silk reg", serif;
+  text-align: center;
+  margin-top: -10rem; /* Moved up to align with image bottom as per original */
+  color: #e5e1dc;
+  font-weight: lighter;
+  position: relative;
+  z-index: 1; /* Ensure it stays behind elements if needed */
+}
+
+/* Second Section */
+.story-second .flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-second .flex p {
+  font-size: 16.304px;
+  font-weight: lighter;
+  line-height: 2;
+  font-family: "Helvetica", sans-serif;
+  width: 30%;
+  padding-bottom: 10rem;
+  text-align: center;
+}
+
+.story-second .flex img {
+  width: 1163.95px;
+  height: 919.41px;
+  object-fit: cover;
+}
+
+/* Third Section */
+.story-third .flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem;
+}
+
+.story-third .flex p {
+  font-size: 16.304px;
+  font-weight: lighter;
+  line-height: 2;
+  font-family: "Helvetica", sans-serif;
+  width: 100%;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.story-third .flex .text-content {
+  width: 30%;
+}
+
+.story-third .flex img {
+  width: 576.47px;
+  height: 723.53px;
+  margin-top: 10rem;
+  object-fit: cover;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .story-hero .head-text h1 {
+    font-size: 3rem;
+  }
+  .story-hero .flex {
+    padding-inline: 2rem;
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .story-hero .head-text h1 {
+    font-size: 1.5rem;
+    top: 10rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .story-hero {
+    padding-top: 6rem;
+    padding-inline: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .story-hero .head-text {
+    order: 1;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .story-hero .head-text h1 {
+    font-size: 2.2rem;
+    position: static;
+    transform: none;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 1px;
+  }
+
+  .story-hero .flex {
+    display: contents;
+  }
+
+  .story-hero .main-image {
+    order: 2;
+  }
+  .story-hero .main-image img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 50vh;
+  }
+
+  .story-hero .bg-name {
+    order: 3;
+    font-size: 2.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .story-hero .side {
+    order: 4;
+    width: 100%;
+  }
+
+  .story-hero .side p {
+    width: 100% !important;
+    text-align: center;
+    padding-bottom: 2.5rem;
+  }
+
+  .story-hero .side .images {
+    justify-content: center;
+  }
+  .story-hero .side .images img {
+    width: calc(50% - 0.5rem) !important;
+    height: auto !important;
+    object-fit: cover;
+  }
+
+  .story-second .flex {
+    padding: 4rem 1.5rem;
+  }
+  .story-second .flex p {
+    width: 100%;
+  }
+  .story-second .flex img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .story-third .flex {
+    padding: 4rem 1.5rem;
+  }
+  .story-third .flex .text-content {
+    width: 100%;
+  }
+  .story-third .flex img {
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    object-fit: cover;
+  }
+}

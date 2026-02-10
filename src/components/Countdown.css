@@ -1,0 +1,94 @@
+.countdown {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  margin-block: 4rem;
+  position: relative;
+}
+
+.countdown .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+  margin-bottom: 4rem;
+  font-family: "Helvetica", sans-serif;
+  font-weight: lighter;
+}
+
+.time {
+  display: flex;
+  gap: 6rem;
+}
+
+.time div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time span {
+  font-size: 8rem;
+  font-family: "silk reg", serif;
+  font-weight: lighter;
+  line-height: 1;
+}
+
+.time small {
+  font-size: 1.1rem;
+  letter-spacing: 5px;
+  margin-top: 2rem;
+  font-family: "Helvetica", sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .time {
+    gap: 3rem;
+  }
+  .time span {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .time {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .time span {
+    font-size: 4rem;
+  }
+  .time small {
+    font-size: 0.6rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown .overlay .time {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .countdown .overlay .time span {
+    font-size: 4rem;
+  }
+  .countdown .overlay .time small {
+    font-size: 0.8rem;
+  }
+}
