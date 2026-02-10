@@ -1,5 +1,5 @@
 import "./LocationSection.css";
-import locationImg from "../assets/kiah/kiah5.jpeg";
+import locationImg from "../assets/kiah/kiah5.jpg";
 
 const LocationSection = () => {
   const ceremonyURL =

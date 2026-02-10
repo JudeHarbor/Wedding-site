@@ -1,7 +1,7 @@
 import "./Hero.css";
-import sideImg1 from "../assets/kiah/kiah1.jpeg";
-import mainImg from "../assets/kiah/kiah2.jpeg";
-import sideImg2 from "../assets/kiah/kiah3.jpeg";
+import sideImg1 from "../assets/kiah/kiah1.jpg";
+import mainImg from "../assets/kiah/kiah2.jpg";
+import sideImg2 from "../assets/kiah/kiah3.jpg";
 
 const Hero = () => {
   return (

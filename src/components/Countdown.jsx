@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Countdown.css";
-import bgImg from "../assets/kiah/kiah6.jpeg";
+import bgImg from "../assets/kiah/kiah6.jpg";
 
 const Countdown = () => {
   const targetDate = new Date("2026-03-21T11:00:00+01:00").getTime();

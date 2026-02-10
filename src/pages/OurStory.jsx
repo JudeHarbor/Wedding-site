@@ -1,9 +1,9 @@
 import "./OurStory.css";
-import story1 from "../assets/kiah/kiah10.jpeg";
-import story2 from "../assets/kiah/kiah11.jpeg";
-import story3 from "../assets/kiah/kiah12.jpeg";
-import story4 from "../assets/kiah/kiah1.jpeg";
-import story5 from "../assets/kiah/kiah2.jpeg";
+import story1 from "../assets/kiah/kiah10.jpg";
+import story2 from "../assets/kiah/kiah11.jpg";
+import story3 from "../assets/kiah/kiah12.jpg";
+import story4 from "../assets/kiah/kiah1.jpg";
+import story5 from "../assets/kiah/kiah2.jpg";
 
 const OurStory = () => {
   return (

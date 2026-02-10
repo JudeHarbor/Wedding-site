@@ -1,6 +1,6 @@
 import "./InfoSection.css";
-import registryImg from "../assets/kiah/kiah7.jpeg";
-import dressCodeImg from "../assets/kiah/kiah9.jpeg";
+import registryImg from "../assets/kiah/kiah7.jpg";
+import dressCodeImg from "../assets/kiah/kiah9.jpg";
 
 const InfoSection = () => {
   return (

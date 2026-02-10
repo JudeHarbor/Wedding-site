@@ -24,8 +24,17 @@ function App() {
       });
     }, observerOptions);
 
-    const revealElements = document.querySelectorAll(".reveal");
-    revealElements.forEach((el) => observer.observe(el));
+    const observe = () => {
+      const revealElements = document.querySelectorAll(".reveal");
+      revealElements.forEach((el) => observer.observe(el));
+    };
+
+    // Initial observe
+    observe();
+
+    // Re-observe when DOM content changes (to handle React routing)
+    const mutationObserver = new MutationObserver(observe);
+    mutationObserver.observe(document.body, { childList: true, subtree: true });
 
     // 2. Global Image Click Listener for Lightbox
     const handleImageClick = (e) => {
@@ -42,6 +51,7 @@ function App() {
 
     return () => {
       observer.disconnect();
+      mutationObserver.disconnect();
       document.removeEventListener("click", handleImageClick);
     };
   }, []);
