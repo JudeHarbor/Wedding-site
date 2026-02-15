@@ -34,6 +34,7 @@ const Navbar = () => {
           <button className="menu-toggle" id="menuToggle" onClick={toggleMenu}>
             <span></span>
             <span></span>
+            <span></span>
           </button>
           <ul className="nav-links">
             <li>

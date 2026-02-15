@@ -15,7 +15,7 @@ const Countdown = () => {
     const calculateTimeLeft = () => {
       const now = new Date().getTime();
       const diff = targetDate - now;
-
+3
       if (diff <= 0) {
         return { days: 0, hours: 0, minutes: 0, seconds: 0 };
       }

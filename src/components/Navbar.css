@@ -28,31 +28,37 @@ nav {
 
 .menu-toggle span {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    left: 4px;
     width: 24px;
     height: 2px;
     background: black;
-    transform-origin: center;
-    transition:
-        transform 0.3s ease,
-        opacity 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.menu-toggle span:first-child {
-    transform: translate(-50%, -50%);
+.menu-toggle span:nth-child(1) {
+    top: 9px;
 }
 
-.menu-toggle span:last-child {
-    transform: translate(-50%, -50%) rotate(90deg);
+.menu-toggle span:nth-child(2) {
+    top: 15px;
 }
 
-nav.nav-active .menu-toggle span:first-child {
-    transform: translate(-50%, -50%) rotate(45deg);
+.menu-toggle span:nth-child(3) {
+    top: 21px;
 }
 
-nav.nav-active .menu-toggle span:last-child {
-    transform: translate(-50%, -50%) rotate(-45deg);
+nav.nav-active .menu-toggle span:nth-child(1) {
+    top: 15px;
+    transform: rotate(45deg);
+}
+
+nav.nav-active .menu-toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+nav.nav-active .menu-toggle span:nth-child(3) {
+    top: 15px;
+    transform: rotate(-45deg);
 }
 
 .nav-links {
