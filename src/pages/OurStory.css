@@ -9,13 +9,14 @@
 .story-hero .head-text h1 {
   font-size: 85.12px;
   text-decoration: none;
-  color: black;
+  color: #000;
   font-family: "silk reg", serif;
-  font-weight: lighter;
+  font-weight: 400;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 15rem; /* Adjusted for React layout */
+  top: 15rem;
+  /* Adjusted for React layout */
 }
 
 .story-hero .flex {
@@ -36,8 +37,9 @@
 
 .story-hero .side p {
   font-size: 16.304px;
-  font-weight: lighter;
+  font-weight: 400;
   line-height: 2;
+  color: #000;
   font-family: "Helvetica", sans-serif;
   width: 80%;
   padding-bottom: 10rem;
@@ -58,11 +60,13 @@
   font-size: 199.2px;
   font-family: "silk reg", serif;
   text-align: center;
-  margin-top: -10rem; /* Moved up to align with image bottom as per original */
+  margin-top: -10rem;
+  /* Moved up to align with image bottom as per original */
   color: #e5e1dc;
   font-weight: lighter;
   position: relative;
-  z-index: 1; /* Ensure it stays behind elements if needed */
+  z-index: 1;
+  /* Ensure it stays behind elements if needed */
 }
 
 /* Second Section */
@@ -75,8 +79,9 @@
 
 .story-second .flex p {
   font-size: 16.304px;
-  font-weight: lighter;
+  font-weight: 400;
   line-height: 2;
+  color: #000;
   font-family: "Helvetica", sans-serif;
   width: 30%;
   padding-bottom: 10rem;
@@ -100,8 +105,9 @@
 
 .story-third .flex p {
   font-size: 16.304px;
-  font-weight: lighter;
+  font-weight: 400;
   line-height: 2;
+  color: #000;
   font-family: "Helvetica", sans-serif;
   width: 100%;
   padding-bottom: 1rem;
@@ -124,6 +130,7 @@
   .story-hero .head-text h1 {
     font-size: 3rem;
   }
+
   .story-hero .flex {
     padding-inline: 2rem;
     gap: 5rem;
@@ -169,6 +176,7 @@
   .story-hero .main-image {
     order: 2;
   }
+
   .story-hero .main-image img {
     width: 100% !important;
     height: auto !important;
@@ -196,6 +204,7 @@
   .story-hero .side .images {
     justify-content: center;
   }
+
   .story-hero .side .images img {
     width: calc(50% - 0.5rem) !important;
     height: auto !important;
@@ -205,9 +214,11 @@
   .story-second .flex {
     padding: 4rem 1.5rem;
   }
+
   .story-second .flex p {
     width: 100%;
   }
+
   .story-second .flex img {
     width: 100%;
     height: auto;
@@ -217,9 +228,11 @@
   .story-third .flex {
     padding: 4rem 1.5rem;
   }
+
   .story-third .flex .text-content {
     width: 100%;
   }
+
   .story-third .flex img {
     width: 100%;
     height: auto;
