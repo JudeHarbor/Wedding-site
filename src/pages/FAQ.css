@@ -1,0 +1,347 @@
+.faq-hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-overlay h1 {
+    font-family: "silk reg", serif;
+    font-size: 4.5rem;
+    font-weight: lighter;
+    color: #000;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+/* FAQ Content Section */
+.faq-content {
+    padding: 8rem 10rem;
+    background: hsla(40, 17.65%, 96.67%, 1);
+}
+
+.faq-category {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 6rem;
+    margin-bottom: 8rem;
+    scroll-margin-top: 120px;
+}
+
+.category-title {
+    font-family: "silk reg", serif;
+    font-size: 3rem;
+    font-weight: lighter;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.questions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.question {
+    font-family: "Helvetica", sans-serif;
+    font-size: 0.95rem;
+    font-weight: normal;
+    color: #000;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+.question:not(:empty)::before {
+    content: "• ";
+    margin-right: 0.5rem;
+}
+
+.answer {
+    font-family: "Helvetica", sans-serif;
+    font-size: 0.95rem;
+    font-weight: lighter;
+    color: #000;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+    padding-left: 1rem;
+    white-space: pre-line;
+}
+
+/* Make account numbers stand out */
+.gifts-answer {
+    padding-left: 1rem;
+}
+
+.gifts-answer>p {
+    margin-bottom: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+}
+
+.account-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.account-card {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    animation: cardPulse 2s ease-in-out infinite;
+    transition: all 0.3s ease;
+}
+
+.account-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    animation: none;
+}
+
+.account-number {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    animation: numberPulse 1.5s ease-in-out infinite;
+}
+
+.bank-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #8b7355;
+    margin-bottom: 0.3rem;
+}
+
+.account-name {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #666;
+}
+
+@keyframes cardPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    50% {
+        box-shadow: 0 6px 15px rgba(139, 115, 85, 0.3);
+    }
+}
+
+@keyframes numberPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* RSVP Link Styling */
+.rsvp-link-text {
+    color: #8b7355;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.rsvp-link-text:hover {
+    color: #6b5335;
+    text-decoration-thickness: 3px;
+    transform: scale(1.05);
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    .faq-overlay h1 {
+        font-size: 3.5rem;
+    }
+
+    .faq-content {
+        padding: 6rem 4rem;
+    }
+
+    .category-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-hero {
+        height: 50vh;
+    }
+
+    .faq-overlay h1 {
+        font-size: 2.5rem;
+    }
+
+    .faq-content {
+        padding: 4rem 2rem;
+    }
+
+    .faq-category {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .category-title {
+        font-size: 2rem;
+    }
+
+    .questions-list {
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-hero {
+        height: 40vh;
+    }
+
+    .faq-overlay h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .faq-content {
+        padding: 3rem 1.5rem;
+    }
+
+    .category-title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .question,
+    .answer {
+        font-size: 0.9rem;
+    }
+}
+
+/* RSVP Button Arrow Animation */
+.nav-actions .black.pulse-arrow {
+    position: relative;
+}
+
+/* Pulsing ring effect around button */
+.nav-actions .black.pulse-arrow::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border: 3px solid #000;
+    border-radius: 50px;
+    animation: pulseRing 1.5s ease-out infinite;
+    pointer-events: none;
+}
+
+/* Straight arrow pointing from below */
+.nav-actions .black.pulse-arrow::after {
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    right: -40px;
+    width: 80px;
+    height: 70px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 70' fill='none'%3E%3Cpath d='M75 65 L25 10 M25 10 L32 15 M25 10 L30 17' stroke='%23000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: arrowFloat 1.5s ease-in-out infinite;
+    pointer-events: none;
+    opacity: 0.9;
+}
+
+@keyframes pulseRing {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.15);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}
+
+@keyframes arrowFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
+
+/* Mobile RSVP Animation */
+@media (max-width: 768px) {
+
+    /* Hide arrow on mobile, only show pulsing ring */
+    .mobile-only .rsvp-link.pulse-arrow::after {
+        display: none;
+    }
+
+    .mobile-only .rsvp-link.pulse-arrow {
+        position: relative;
+    }
+
+    .mobile-only .rsvp-link.pulse-arrow::before {
+        content: "";
+        position: absolute;
+        top: -8px;
+        left: -8px;
+        right: -8px;
+        bottom: -8px;
+        border: 3px solid #000;
+        border-radius: 8px;
+        animation: pulseRing 1.5s ease-out infinite;
+        pointer-events: none;
+    }
+}

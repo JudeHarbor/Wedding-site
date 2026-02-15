@@ -41,16 +41,18 @@ const Navbar = () => {
               <NavLink to="/ourstory">OUR STORY</NavLink>
             </li>
             <li>
-              <NavLink to="/travel">TRAVEL & STAY</NavLink>
-            </li>
-            <li>
-              <NavLink to="/info">INFO</NavLink>
+              <NavLink to="/">HOME</NavLink>
             </li>
             <li className="mobile-only">
-              <a href="#">FAQS</a>
+              <NavLink to="/faq">FAQS</NavLink>
             </li>
             <li className="mobile-only">
-              <a href="#" className="rsvp-link">
+              <a
+                href="https://wa.me/qr/RBYDO7NRPCDQE1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rsvp-link"
+              >
                 RSVP
               </a>
             </li>
@@ -61,8 +63,16 @@ const Navbar = () => {
           </Link>
 
           <div className="nav-actions">
-            <button className="white">FAQS</button>
-            <button className="black">RSVP</button>
+            <NavLink to="/faq">
+              <button className="white">FAQS</button>
+            </NavLink>
+            <a
+              href="https://wa.me/qr/RBYDO7NRPCDQE1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="black">RSVP</button>
+            </a>
           </div>
         </nav>
       </header>

@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import OurStory from "./pages/OurStory";
+import FAQ from "./pages/FAQ";
 import "./App.css";
 
 function App() {
@@ -58,12 +60,14 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <div className="app-container">
         <Navbar />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/ourstory" element={<OurStory />} />
+            <Route path="/faq" element={<FAQ />} />
             <Route
               path="/travel"
               element={

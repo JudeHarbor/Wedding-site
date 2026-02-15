@@ -44,7 +44,6 @@ const LocationSection = () => {
           </div>
         </a>
       </div>
-      <button className="black">TRAVEL & STAY</button>
     </section>
   );
 };

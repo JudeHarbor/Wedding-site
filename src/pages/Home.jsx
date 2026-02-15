@@ -3,10 +3,12 @@ import SneakPeek from "../components/SneakPeek";
 import LocationSection from "../components/LocationSection";
 import Countdown from "../components/Countdown";
 import InfoSection from "../components/InfoSection";
+import FloatingTimer from "../components/FloatingTimer";
 
 const Home = () => {
   return (
     <div className="home-page">
+      <FloatingTimer />
       <Hero />
       <div className="reveal">
         <SneakPeek />
@@ -14,9 +16,7 @@ const Home = () => {
       <div className="reveal">
         <LocationSection />
       </div>
-      <div className="reveal">
-        <Countdown />
-      </div>
+      <Countdown />
       <div className="reveal">
         <InfoSection />
       </div>

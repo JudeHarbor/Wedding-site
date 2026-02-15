@@ -18,10 +18,10 @@ const OurStory = () => {
           </div>
           <div className="side">
             <p>
-              From the dawn of a new day, what began as a simple hello slowly
-              grew into a friendship—and a love—meant to last forever. What
-              started small carried meaning from the very beginning, even before
-              we understood where it would lead.
+              "Whatever our souls are made of, his and mine are the same." True
+              love is a journey that starts with a simple hello and grows into a
+              lifetime of shared dreams, whispered promises, and a connection
+              that transcends time.
             </p>
             <div className="images">
               <img src={story2} alt="Story 2" loading="lazy" />
@@ -32,33 +32,54 @@ const OurStory = () => {
         <h1 className="bg-name">SONIA & KIAH</h1>
       </section>
 
-      <section className="story-second reveal">
+      <section className="story-split reveal">
         <div className="flex">
-          <p>
-            We met without truly meeting, connected before we ever realized it.
-            Our paths crossed for the first time at a friend’s wedding, where we
-            celebrated their love, unaware that one day it would be our own turn
-            to stand in that moment.
-          </p>
-          <img src={story4} alt="Story 4" loading="lazy" />
+          <div className="image-side">
+            <img src={story4} alt="Our Story" loading="lazy" />
+          </div>
+          <div className="text-side quote">
+            <p>
+              "From the dawn of a new day, what began as a simple hello slowly
+              grew into a friendship—and a love—meant to last forever. What
+              started small carried meaning from the very beginning, even before
+              we understood where it would lead."
+              <p>
+                "We met without truly meeting, connected before we ever realized
+                it. Our paths crossed for the first time at a friend’s wedding,
+                where we celebrated their love, unaware that one day it would be
+                our own turn to stand in that moment."
+              </p>
+            </p>
+            <span className="attribution">— HEZEKIAH</span>
+          </div>
         </div>
       </section>
 
-      <section className="story-third reveal">
+      <section className="story-split reverse reveal">
         <div className="flex">
-          <div className="text-content">
+          <div className="text-side quote">
             <p>
-              What started with a greeting became shared conversations, gentle
+              "What started with a greeting became shared conversations, gentle
               laughter, and hearts finding their way to one another. With every
               exchange, the connection deepened, growing naturally and
-              effortlessly.
+              effortlessly."
             </p>
             <p>
-              From a simple “hello,” we now walk hand in hand, ready to embrace
-              the future together. This is our story—where hello became forever.
+              "From a simple “hello,” we now walk hand in hand, ready to embrace
+              the future together. This is our story—where hello became
+              forever."
             </p>
+            <span className="attribution">— SONIA</span>
           </div>
-          <img src={story5} alt="Story 5" loading="lazy" />
+          <div className="image-side">
+            <img src={story4} alt="Our Story" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section className="story-final reveal">
+        <div className="container">
+          <img src={story5} alt="Sonia & Kiah Forever" loading="lazy" />
         </div>
       </section>
     </div>

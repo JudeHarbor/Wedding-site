@@ -15,7 +15,7 @@ const Countdown = () => {
     const calculateTimeLeft = () => {
       const now = new Date().getTime();
       const diff = targetDate - now;
-3
+
       if (diff <= 0) {
         return { days: 0, hours: 0, minutes: 0, seconds: 0 };
       }
@@ -32,7 +32,6 @@ const Countdown = () => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
 
-    // Initial call
     setTimeLeft(calculateTimeLeft());
 
     return () => clearInterval(timer);
@@ -41,7 +40,11 @@ const Countdown = () => {
   const formatNumber = (num) => String(num).padStart(2, "0");
 
   return (
-    <section className="countdown" style={{ backgroundImage: `url(${bgImg})` }}>
+    <section
+      id="main-countdown"
+      className="countdown reveal"
+      style={{ backgroundImage: `url(${bgImg})` }}
+    >
       <div className="overlay">
         <p className="subtitle">LET THE COUNTDOWN BEGIN</p>
 
