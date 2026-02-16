@@ -31,12 +31,14 @@
     width: 254.34px;
     height: 380.75px;
     object-fit: cover;
+    object-position: top center;
 }
 
 .hero .images .main-image {
     width: 576.5px;
     height: 723.53px;
     object-fit: cover;
+    object-position: center 20%;
 }
 
 .hero .motto {
@@ -44,10 +46,13 @@
     margin: 3rem;
 }
 
-.hero .motto h1 {
+.hero .motto p {
     font-size: 20.608px;
     font-family: "Helvetica", sans-serif;
     font-weight: lighter;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero .side-images-mobile-wrap {
@@ -173,13 +178,12 @@
         order: 2;
     }
 
-    .hero .motto h1 {
+    .hero .motto p {
         font-size: 13.5px;
         line-height: 1.8;
         letter-spacing: 1.5px;
         font-weight: 400;
         margin-bottom: 0px;
-        text-transform: uppercase;
         font-family: "Helvetica", sans-serif;
         color: #000;
     }
@@ -198,6 +202,7 @@
         width: 44%;
         height: 260px;
         object-fit: cover;
+        object-position: top center;
     }
 
     /* Cleanup for original desktop elements on mobile */

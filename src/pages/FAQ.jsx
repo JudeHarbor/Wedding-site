@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "./FAQ.css";
-import faqBg from "../assets/kiah/kiah7.jpg";
+import faqBg from "../assets/kiah/kiah19.jpeg";
 
 const FAQ = () => {
   const faqData = [
@@ -50,7 +50,7 @@ const FAQ = () => {
         {
           question: "",
           answer:
-            "Your presence is the greatest gift. However, if you wish to bless us, we will appreciate monetary gifts.\n\n8082559888\nOpay\nHezekiah Ogbeide\n\n2117618015\nZenith Bank\nHezekiah Ogbeide",
+            "Your presence is the greatest gift. However, if you wish to gift us, we will appreciate monetary gifts.\n\n3191040277\nFirst bank\nAghedo sonia Iyobosa\n\n2117618015\nZenith Bank\nHezekiah Ogbeide",
         },
       ],
     },
@@ -124,9 +124,9 @@ const FAQ = () => {
                       </p>
                       <div className="account-details">
                         <div className="account-card">
-                          <p className="account-number">8082559888</p>
-                          <p className="bank-name">Opay</p>
-                          <p className="account-name">Hezekiah Ogbeide</p>
+                          <p className="account-number">3191040277</p>
+                          <p className="bank-name">First bank</p>
+                          <p className="account-name">Aghedo sonia Iyobosa</p>
                         </div>
                         <div className="account-card">
                           <p className="account-number">2117618015</p>
@@ -148,6 +148,22 @@ const FAQ = () => {
                       </a>{" "}
                       for accommodation booking and support.
                     </p>
+                  ) : category.category === "DRESS CODE" ? (
+                    <div className="answer">
+                      <p>
+                        We kindly ask our guests to dress in elegant attire in
+                        the following color palette:{" "}
+                        <span className="color-brown">Brown</span>,{" "}
+                        <span className="color-ivory">Ivory</span>, and{" "}
+                        <span className="color-burgundy">Burgundy (Wine)</span>.
+                      </p>
+                      <br />
+                      <p>
+                        Choose any shade within these tones and come looking
+                        your absolute best as we celebrate this special day
+                        together.
+                      </p>
+                    </div>
                   ) : (
                     <p className="answer">{item.answer}</p>
                   )}

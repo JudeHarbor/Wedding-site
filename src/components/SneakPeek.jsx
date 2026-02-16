@@ -1,5 +1,5 @@
 import "./SneakPeek.css";
-import bgImg from "../assets/kiah/kiah4.jpg";
+import bgImg from "../assets/kiah/kiah14.jpeg";
 
 const SneakPeek = () => {
   const ceremonyURL =

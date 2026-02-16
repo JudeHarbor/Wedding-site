@@ -36,6 +36,23 @@ a {
   text-decoration: none;
 }
 
+/* Dress Code Palette Colors */
+.color-brown {
+  color: #8b4513 !important;
+  font-weight: bold;
+}
+
+.color-ivory {
+  color: #c9b085 !important;
+  /* A slightly darker ivory/gold for visibility on light bg */
+  font-weight: bold;
+}
+
+.color-burgundy {
+  color: #800020 !important;
+  font-weight: bold;
+}
+
 /* Scroll Animations */
 .reveal {
   opacity: 0;

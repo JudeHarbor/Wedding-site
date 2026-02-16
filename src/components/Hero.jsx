@@ -1,7 +1,7 @@
 import "./Hero.css";
-import sideImg1 from "../assets/kiah/kiah1.jpg";
+import sideImg1 from "../assets/kiah/sonia1.jpeg";
 import mainImg from "../assets/kiah/kiah2.jpg";
-import sideImg2 from "../assets/kiah/kiah3.jpg";
+import sideImg2 from "../assets/kiah/kiah13.jpeg";
 
 const Hero = () => {
   return (
@@ -34,10 +34,11 @@ const Hero = () => {
         />
       </div>
       <div className="motto">
-        <h1>JOIN US AS WE EMBARK</h1>
-        <h1>ON A JOURNEY OF LOVE,</h1>
-        <h1>JOY, AND ETERNAL</h1>
-        <h1>HAPPINESS.</h1>
+        <p>
+          We're excited to celebrate our love with you on this special day,
+          grateful for your love and support, and can't wait to celebrate
+          together.
+        </p>
       </div>
       <div className="side-images-mobile-wrap">
         <img

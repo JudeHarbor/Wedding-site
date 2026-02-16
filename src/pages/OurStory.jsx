@@ -1,9 +1,11 @@
 import "./OurStory.css";
-import story1 from "../assets/kiah/kiah10.jpg";
+import story1 from "../assets/kiah/kiah10.png";
 import story2 from "../assets/kiah/kiah11.jpg";
 import story3 from "../assets/kiah/kiah12.jpg";
 import story4 from "../assets/kiah/kiah1.jpg";
-import story5 from "../assets/kiah/kiah2.jpg";
+import story5 from "../assets/kiah/kiah20.jpeg";
+import kiahQuoteImg from "../assets/kiah/kiah22.jpeg";
+import soniaQuoteImg from "../assets/kiah/sonia2.jpeg";
 
 const OurStory = () => {
   return (
@@ -35,28 +37,8 @@ const OurStory = () => {
       <section className="story-split reveal">
         <div className="flex">
           <div className="image-side">
-            <img src={story4} alt="Our Story" loading="lazy" />
+            <img src={soniaQuoteImg} alt="Sonia Story" loading="lazy" />
           </div>
-          <div className="text-side quote">
-            <p>
-              "From the dawn of a new day, what began as a simple hello slowly
-              grew into a friendship—and a love—meant to last forever. What
-              started small carried meaning from the very beginning, even before
-              we understood where it would lead."
-              <p>
-                "We met without truly meeting, connected before we ever realized
-                it. Our paths crossed for the first time at a friend’s wedding,
-                where we celebrated their love, unaware that one day it would be
-                our own turn to stand in that moment."
-              </p>
-            </p>
-            <span className="attribution">— HEZEKIAH</span>
-          </div>
-        </div>
-      </section>
-
-      <section className="story-split reverse reveal">
-        <div className="flex">
           <div className="text-side quote">
             <p>
               "What started with a greeting became shared conversations, gentle
@@ -71,8 +53,28 @@ const OurStory = () => {
             </p>
             <span className="attribution">— SONIA</span>
           </div>
+        </div>
+      </section>
+
+      <section className="story-split reverse reveal">
+        <div className="flex">
+          <div className="text-side quote">
+            <p>
+              "From the dawn of a new day, what began as a simple hello slowly
+              grew into a friendship—and a love—meant to last forever. What
+              started small carried meaning from the very beginning, even before
+              we understood where it would lead."
+            </p>
+            <p>
+              "We met without truly meeting, connected before we ever realized
+              it. Our paths crossed for the first time at a friend’s wedding,
+              where we celebrated their love, unaware that one day it would be
+              our own turn to stand in that moment."
+            </p>
+            <span className="attribution">— HEZEKIAH</span>
+          </div>
           <div className="image-side">
-            <img src={story4} alt="Our Story" loading="lazy" />
+            <img src={kiahQuoteImg} alt="Hezekiah Story" loading="lazy" />
           </div>
         </div>
       </section>

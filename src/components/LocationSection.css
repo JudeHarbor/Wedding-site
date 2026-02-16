@@ -71,6 +71,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top center;
   filter: grayscale(100%);
 }
 
@@ -97,10 +98,12 @@
   .location .text-up p {
     font-size: 4rem;
   }
+
   .location .flex {
     gap: 5rem;
     padding: 5rem 2rem;
   }
+
   .location .flex .img-wrap {
     width: 300px;
     height: auto;
