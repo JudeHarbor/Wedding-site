@@ -1,5 +1,5 @@
 import "./OurStory.css";
-import story1 from "../assets/kiah/kiah10.png";
+import story1 from "../assets/kiah/kiah23.png";
 import story2 from "../assets/kiah/kiah11.jpg";
 import story3 from "../assets/kiah/kiah12.jpg";
 import story4 from "../assets/kiah/kiah1.jpg";
@@ -20,10 +20,8 @@ const OurStory = () => {
           </div>
           <div className="side">
             <p>
-              "Whatever our souls are made of, his and mine are the same." True
-              love is a journey that starts with a simple hello and grows into a
-              lifetime of shared dreams, whispered promises, and a connection
-              that transcends time.
+              From a Simple Hello to Moments That Last a Lifetime — The Start of
+              Our Journey
             </p>
             <div className="images">
               <img src={story2} alt="Story 2" loading="lazy" />
@@ -60,16 +58,17 @@ const OurStory = () => {
         <div className="flex">
           <div className="text-side quote">
             <p>
-              "From the dawn of a new day, what began as a simple hello slowly
-              grew into a friendship—and a love—meant to last forever. What
-              started small carried meaning from the very beginning, even before
-              we understood where it would lead."
+              "From the dawn of a new day, a simple hello slowly grew into a
+              friendship and a love meant to last forever. What started small
+              carried meaning from the very beginning."
             </p>
             <p>
-              "We met without truly meeting, connected before we ever realized
-              it. Our paths crossed for the first time at a friend’s wedding,
-              where we celebrated their love, unaware that one day it would be
-              our own turn to stand in that moment."
+              "We first met while celebrating a friend’s love, and now it’s our
+              turn to celebrate ours."
+            </p>
+            <p>
+              "Reflecting on this beautiful journey and how far we’ve come, we
+              give thanks to Jehovah for guiding us every step of the way."
             </p>
             <span className="attribution">— HEZEKIAH</span>
           </div>

@@ -35,9 +35,11 @@ const Hero = () => {
       </div>
       <div className="motto">
         <p>
-          We're excited to celebrate our love with you on this special day,
-          grateful for your love and support, and can't wait to celebrate
-          together.
+          Welcome to our wedding website! We’re so excited to share our love
+          story and celebrate this special day with you. Explore the site for
+          all the details, stories, and ways to be part of our celebration. Your
+          love and support mean the world to us, and we can’t wait to make
+          beautiful memories together.
         </p>
       </div>
       <div className="side-images-mobile-wrap">

@@ -50,7 +50,7 @@ const FAQ = () => {
         {
           question: "",
           answer:
-            "Your presence is the greatest gift. However, if you wish to gift us, we will appreciate monetary gifts.\n\n3191040277\nFirst bank\nAghedo sonia Iyobosa\n\n2117618015\nZenith Bank\nHezekiah Ogbeide",
+            "Your presence is the greatest gift. If you’d like to support us as we begin this new chapter, we would truly appreciate any generous voluntary contribution.\n\n3191040277\nFirst bank\nAghedo sonia Iyobosa\n\n2117618015\nZenith Bank\nHezekiah Ogbeide",
         },
       ],
     },
@@ -119,8 +119,9 @@ const FAQ = () => {
                   {category.category === "GIFTS" ? (
                     <div className="answer gifts-answer">
                       <p>
-                        Your presence is the greatest gift. However, if you wish
-                        to bless us, we will appreciate monetary gifts.
+                        Your presence is the greatest gift. If you’d like to
+                        support us as we begin this new chapter, we would truly
+                        appreciate any generous voluntary contribution.
                       </p>
                       <div className="account-details">
                         <div className="account-card">
