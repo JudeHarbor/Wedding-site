@@ -20,7 +20,7 @@ const LocationSection = () => {
         href={rsvpURL}
         target="_blank"
         rel="noopener noreferrer"
-        style={{ textDecoration: "none" }}
+        className="rsvp-link-mobile"
       >
         <button className="black">CONTACT RSVP</button>
       </a>

@@ -146,7 +146,8 @@
     text-align: center !important;
   }
 
-  .location .black {
-    order: 4;
+  .location .rsvp-link-mobile {
+    order: 2;
+    text-decoration: none;
   }
 }
