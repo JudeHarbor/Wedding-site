@@ -7,7 +7,7 @@ const LocationSection = () => {
   return (
     <section className="location">
       <div className="text-up">
-        <p>RSVP</p>
+        <p>LOCATION</p>
       </div>
       <div className="flex">
         {/* Central Image */}
