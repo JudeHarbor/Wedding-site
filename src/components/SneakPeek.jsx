@@ -2,10 +2,7 @@ import "./SneakPeek.css";
 import bgImg from "../assets/kiah/kiah14.jpeg";
 
 const SneakPeek = () => {
-  const ceremonyURL =
-    "https://www.google.com/maps/search/?api=1&query=Kingdom+Hall+of+Jehovah's+Witnesses,+42+Uyigue+Street,+Off+College+Road,+Aduwawa,+Benin+City,+Edo+State,+Nigeria";
-  const receptionURL =
-    "https://www.google.com/maps/search/?api=1&query=Jahbless+Event+Center,+WAEC+Road,+Benin–Auchi+Road,+Benin+City,+Edo+State,+Nigeria";
+  const rsvpURL = "https://wa.me/qr/RBYDO7NRPCDQE1";
 
   return (
     <section className="sneak" style={{ backgroundImage: `url(${bgImg})` }}>
@@ -16,7 +13,7 @@ const SneakPeek = () => {
         </h1>
         <div className="flex">
           <a
-            href={ceremonyURL}
+            href={rsvpURL}
             target="_blank"
             rel="noopener noreferrer"
             className="col reveal"
@@ -25,7 +22,7 @@ const SneakPeek = () => {
             <p>WEDDING DISCOURSE</p>
           </a>
           <a
-            href={receptionURL}
+            href={rsvpURL}
             target="_blank"
             rel="noopener noreferrer"
             className="col reveal"
